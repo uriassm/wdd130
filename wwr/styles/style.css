@@ -237,7 +237,73 @@ nav {
     transform: scale(1.1)
 }
 
+#rivers-content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
+#rivers-title {
+    text-align: center;
+}
+
+.rivers-text {
+    color: #EAE2B7;
+    font-family: "Libre Bodoni", Arial, Helvetica;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mainfork-card {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.desolation-canyon-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.grandcanyon-card {
+    grid-column: 9/11;
+    grid-row: 2/3;
+}
+
+.rivers-img {
+    width: 100%;
+    border: 10px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.rivers-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.rivers-info {
+    text-align: left;
+    grid-column: 1/11;
+    grid-row: 5/6;
+}
+
+.rivers-info p {
+    color: white;
+    font-family: "Public Sans", 'Times New Roman', 'Georgia';
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.desolationcanyon-border {
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color: #F77F00;
+    text-align: left;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

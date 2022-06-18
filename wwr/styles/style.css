@@ -304,6 +304,11 @@ nav {
     border-color: #F77F00;
     text-align: left;
 }
+
+.rivers-button-box {
+    text-align: center;
+    padding-top: 150px;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;

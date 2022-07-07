@@ -85,7 +85,7 @@ nav {
     width: 150px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 1; /* Stay at the top */
+    top: 258px; /* Stay at the top */
     left: 0;
     background-color: #16697A; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */

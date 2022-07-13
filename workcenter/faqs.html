@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQs</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="content">
         <header>
             <a href="index.html" id="logo_link">
-                <img class="logo" src="images/work-center-logo.png" alt="Dry Oar Logo">
+                <img class="logo" src="images/work-center-logo.png" alt="FAQ Magnifying Glass">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -20,31 +21,38 @@
         </header>
         <div id="hero">
             <div id="hero-box">
-                <img id="hero-img" src="images/pexels-pixabay-221164.jpg" alt="Frequently asked questions">
+                <img id="hero-img" src="images/magnifying-glass-resized.jpg" alt="Frequently asked questions">
             </div>
             <section id="hero-msg">
                 <h1 class="home-title">FAQs</h1>
             </section>
         </div>
-        <main class="home-grid">
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <a href="index.html">Home</a>
+            <a href="learningcenter.html">Learning Center</a>
+            <a href="faqs.html">FAQs</a>
+        </div>
+        <main class="faq-grid">
             <section class="msg">
                 <h2>FAQs</h2>
                 <p>Find answers to commmon questions about work related software and other topics here. You can filter some commmon
                     questions by selecting the manager or team member link. 
                 </p>
             </section>
-            <section class="role-links">
-                <h3>Select Your Role</h3>
-                <img class="manager-light" src="images/pexels-pixabay-355948.jpg" alt="Lightbulb">
-                <div class="button-box">
-                    <a class="managers" href="">Managers</a>
-                </div>
-                <img class="teamemberquestions" src="images/pexels-olya-kobruseva-5428829.jpg" alt="Team member questions">
-                <div class="button-box">
-                    <a class="team-members" href="">Team Members</a>
-                </div>
-            </section>
-            <h2>Frequently Asked Questions</h2>
+            <div class="manager-light">
+                <img src="images/pexels-pixabay-355948.jpg" alt="Lightbulb">
+            </div>
+            <div class="button-box-mgr">
+                <a class="role-link" href="">Managers</a>
+            </div>
+            <div class="team-member">
+                <img src="images/questions-resized.jpg" alt="Team member questions">
+            </div>
+            <div class="button-box-mbr">
+                <a class="role-link" href="">Team Members</a>
+            </div>
+            <h2 class="faq-start">Frequently Asked Questions</h2>
             <section class="q1">
                 <h4>What is the new information system?</h4>
                 <p>The new information system is a new updated website for you to access customer information and complete orders.
@@ -59,7 +67,7 @@
                     you may not have been assigned but need to complete your work.
                 </p>
             </section>
-            <section class="q2">
+            <section class="q3">
                 <h4>How do I report bugs that I experience?</h4>
                 <p>You can report any bugs on the new website using the Feedback link at the bottom of each page.</p>
             </section>

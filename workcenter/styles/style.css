@@ -414,6 +414,7 @@ footer a:hover{
 .q1 p, .q2 p, .q3 p {
     font-family: "Joan", 'Times New Roman', 'Georgia';
     margin: 50px;
+    color: #16697A;
 }
 
 @media screen and (max-width: 900px) {

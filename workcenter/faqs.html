@@ -11,7 +11,7 @@
     <div id="content">
         <header>
             <a href="index.html" id="logo_link">
-                <img class="logo" src="images/work-center-logo.png" alt="FAQ Magnifying Glass">
+                <img class="logo" src="images/logo-no-fill.jpg" alt="FAQ Magnifying Glass">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -53,24 +53,44 @@
                 <a class="role-link" href="">Team Members</a>
             </div>
             <h2 class="faq-start">Frequently Asked Questions</h2>
-            <section class="q1">
-                <h4>What is the new information system?</h4>
+            <div class="question1">
+                <button class="accordion">What is the new information system?</button>
+                <div class="panel">
                 <p>The new information system is a new updated website for you to access customer information and complete orders.
                     The website keeps a familiar user interface while establishes a cleaner design and greater functionality. Most 
-                    interactions with customers should bring you to using this website. 
-                </p>
-            </section>
-            <section class="q2">
-                <h4>Where do I find training needed for my specific role?</h4>
+                    interactions with customers should bring you to using this website.</p>
+                </div>
+            </div>
+            <div class="question2">
+                <button class="accordion">Where do I find training needed for my specific role?</button>
+                <div class="panel">
                 <p>New training will be assigned to you every year and you will receive an email notification. 
                     To access your training courses, visit the Learning Center. You may also enroll in courses
-                    you may not have been assigned but need to complete your work.
-                </p>
-            </section>
-            <section class="q3">
-                <h4>How do I report bugs that I experience?</h4>
+                    you may not have been assigned but need to complete your work.</p>
+                </div>
+            </div>
+            <div class="question3">
+                <button class="accordion">How do I report bugs that I experience?</button>
+                <div class="panel">
                 <p>You can report any bugs on the new website using the Feedback link at the bottom of each page.</p>
-            </section>
+                </div>
+            </div>
+            <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+            </script>
         </main>
         <footer>
             <h3>Work Center &copy; 2022 - Urias Miranda</h3>
